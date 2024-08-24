@@ -109,8 +109,8 @@ app.get("/.well-known/apple-developer-merchantid-domain-association", (req, res)
 });
 
 //Servers the script.js file
-app.get('/applepay.css', (req, res) => {
-    res.sendFile(process.cwd() + '/applepay.css');
+app.get('/applepaystyle.css', (req, res) => {
+    res.sendFile(process.cwd() + '/applepaystyle.css');
 });
 
 
