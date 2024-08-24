@@ -1,0 +1,24 @@
+{
+  "name": "paypal-googlepay-advanced-integration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "myloader.cjs",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node myloader.cjs",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "ejs": "^3.1.6",
+	"dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "node-fetch": "^3.1.0",
+    "paypal-rest-sdk": "^2.0.0-rc.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.22.0"
+  }
+}
