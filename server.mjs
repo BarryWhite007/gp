@@ -8,7 +8,7 @@ const app = express();
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 
-//NEW
+/*//NEW
 app.use(express.json());
 app.use(express.urlencoded({
     extended: true
@@ -132,7 +132,7 @@ function get_access_token() {
         })
 }
 
-//NEW
+//NEW*/
 
 
 // render checkout page with client id & unique client token
