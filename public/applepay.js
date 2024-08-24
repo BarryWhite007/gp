@@ -58,6 +58,7 @@ const paypal_sdk_url = "https://www.paypal.com/sdk/js";
 const client_id = "ASIzmale_xUsexkrMIAVixlMXzDp7kXBLSXiP6c6RaRFz1NVY2Z1KoSG-8necmevPg3uRr4bXIik2Unb";
 const currency = "USD";
 const intent = "capture";
+const merchantID = "BAD7CYMBE9AAW";
 
 let display_error_alert = () => {
     window.scrollTo({
@@ -88,7 +89,7 @@ is_user_logged_in()
 })
 .then((client_token) => {
     //https://developer.paypal.com/sdk/js/configuration/#link-queryparameters
-    //return script_to_head({"src": paypal_sdk_url + "?client-id=" + client_id + "&enable-funding=venmo&currency=" + currency + "&intent=" + intent + "&components=buttons,hosted-fields,applepay", "data-client-token": client_token}) //https://developer.paypal.com/sdk/js/configuration/#link-configureandcustomizeyourintegration
+    return script_to_head({"src": paypal_sdk_url + "?client-id=" + client_id + "&enable-funding=venmo&merchant-id=" + merchantID + "&currency=" + currency + "&intent=" + intent + "&components=buttons,hosted-fields,applepay", "data-client-token": client_token}) //https://developer.paypal.com/sdk/js/configuration/#link-configureandcustomizeyourintegration
 })
 .then(() => {
     //Handle loading spinner
